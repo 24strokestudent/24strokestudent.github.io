@@ -32,7 +32,7 @@ timeFormat: "2006-01-02 15:04:05"
 
 author: 24strokestudent
 email: 1378449070@qq.com
-description: ciallo..."
+description: "ciallo..."
 # subtitle: "少女祈祷中..."
 subtitle:
   typing:
@@ -375,7 +375,7 @@ comment:
     zh-TW: 說些什麼吧！
     ja: コメントを残す
     pt-BR: Deixe um comentário
-  default: waline # default comment system, when you enable multiple comment systems
+  default: utterances
 
 # valine comment system. https://valine.js.org
 # version 1.5.1
@@ -460,7 +460,7 @@ disqus:
 utterances:
   enable: true
   repo: 24strokestudent/my-blog
-  issue_term: title
+  issue_term: pathname
   theme: auto
 
 # https://beaudar.lipk.org/

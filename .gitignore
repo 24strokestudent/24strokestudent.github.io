@@ -9,3 +9,4 @@
 # 编辑器
 .idea/
 *.iml
+hugo.toml.bak*
