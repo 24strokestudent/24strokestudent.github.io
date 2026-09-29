@@ -1,0 +1,32 @@
+baseURL = 'https://24strokestudent.github.io/'
+locale = 'zh-CN'
+timeZone = 'Asia/Shanghai'   # 固定时区：本地和以后 GitHub Actions(用 UTC) 构建结果一致
+title = '24strokestudent 的博客'
+theme = 'reimu'
+
+defaultContentLanguage = 'zh-CN'
+[languages]
+[languages.zh-CN]
+label = '简体中文'
+weight = 1
+hasCJKLanguage = true
+
+# 数学公式（KaTeX）需要的 passthrough 配置
+[markup.goldmark.extensions.passthrough]
+enable = true
+delimiters.block = [["\\[", "\\]"], ["$$", "$$"]]
+delimiters.inline = [["\\(", "\\)"], ["$", "$"]]
+
+[markup.highlight]
+guessSyntax = true
+noClasses = false
+
+# 让首页额外输出一份 Algolia 搜索索引 algolia.json
+[outputs]
+home = ["Algolia", "HTML", "RSS"]
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true

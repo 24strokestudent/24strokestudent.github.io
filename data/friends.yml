@@ -1,0 +1,12 @@
+- name: tuxnode
+  url: https://tuxnode.fun/
+  desc: 系统开发爱好者
+  image: https://tuxnode.fun/tux.png
+  badge: Hexo
+  remark: 一个可爱的 开发者
+- name: D-Sketon
+  url: https://d-sketon.github.io/astro-theme-reimu/
+  desc: Astro 建站
+  image: https://d-sketon.github.io/avatar/avatar.webp
+  badge: Astro
+  remark: 一个可爱的 Astro 主题

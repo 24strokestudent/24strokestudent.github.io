@@ -1,0 +1,11 @@
+# Hugo 构建产物（CI 会重新生成，不要提交）
+/public/
+/resources/
+.hugo_build.lock
+
+# 系统
+.DS_Store
+
+# 编辑器
+.idea/
+*.iml
