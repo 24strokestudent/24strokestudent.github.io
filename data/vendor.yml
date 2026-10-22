@@ -4,21 +4,21 @@ fastly_jsdelivr_gh: https://fastly.jsdelivr.net/gh/
 fastly_jsdelivr_npm: https://fastly.jsdelivr.net/npm/
 unpkg: https://unpkg.com/
 webcache: https://npm.webcache.cn/
-local: /resources/ # Local resources path. If your baseURL contains a subdirectory, you need to add it here.
+local: /vendor/ # Local resources path. If your baseURL contains a subdirectory, you need to add it here.
 
 
 js:
   clipboard:
-    src: webcache|clipboard@2.0.11/dist/clipboard.min.js
+    src: local|clipboard@2.0.11/dist/clipboard.min.js
     integrity: sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q
   lazysizes:
-    src: webcache|lazysizes@5.3.2/lazysizes.min.js
+    src: local|lazysizes@5.3.2/lazysizes.min.js
     integrity: sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf+e
   photoswipe:
-    src: webcache|photoswipe@5.4.4/dist/photoswipe.esm.min.js
+    src: local|photoswipe@5.4.4/dist/photoswipe.esm.min.js
     integrity: sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s
   photoswipe_lightbox:
-    src: webcache|photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js
+    src: local|photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js
     integrity: sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/
   valine:
     src: webcache|valine@1.5.1/dist/Valine.min.js
@@ -33,7 +33,7 @@ js:
     src: webcache|gitalk@1.8.0/dist/gitalk.min.js
     integrity: sha384-kspnZUWBoSWwoJHa0hBCXYbHGbhvU/lcEH5O8eVbSDhbPwsiVUTp/aGX/z/5EuMA
   busuanzi:
-    src: webcache|busuanzi@2.3.0/bsz.pure.mini.js
+    src: local|busuanzi@2.3.0/bsz.pure.mini.js
     integrity: sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S
   algolia:
     src: webcache|algoliasearch@4.17.1/dist/algoliasearch-lite.umd.js
@@ -42,7 +42,7 @@ js:
     src: webcache|@reimujs/instantsearch.js@4.57.0-beta.1/dist/instantsearch.production.min.js
     integrity: sha384-aagKMe8nkqaP2DYQc8kkYOL5l+M5Q2WH/Uhr4teOh0Ybp0RZj0kUSDm45qPikMjK
   pace:
-    src: webcache|pace-js@1.2.4/pace.min.js
+    src: local|pace-js@1.2.4/pace.min.js
     integrity: sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8
   mermaid:
     src: webcache|mermaid@11.16.0/dist/mermaid.min.js
@@ -51,7 +51,7 @@ js:
     src: webcache|svg-pan-zoom@3.6.2/dist/svg-pan-zoom.min.js
     integrity: sha384-GGX4llYprEPGp9w5caepn95YWAEflHnsA5ewt+Y+cBEb95og5cXKllnWKSELlzbx
   firework:
-    src: webcache|mouse-firework@0.2.0/dist/index.umd.js
+    src: local|mouse-firework@0.2.0/dist/index.umd.js
     integrity: sha384-qi9WggRt19tv8Vc7pCHW3ulMNLwrn515zaLEWZjl1px07vz8+pUoWX8n1rgq282T
   pjax:
     src: webcache|theme-shokax-pjax@0.0.3/dist/index.umd.js
@@ -69,10 +69,10 @@ js:
     src: webcache|quicklink@3.0.1/dist/quicklink.umd.js
     integrity: sha384-caMDqvgav/HWdEYQU1QRRHMLleigpL1YHAG0m371DhzfL8rRzUyOb+bEHtwlmYjD
   katex:
-    src: webcache|katex@0.16.47/dist/katex.min.js
+    src: cdn_jsdelivr_npm|katex@0.16.47/dist/katex.min.js
     integrity: sha384-CwjPRVHTvLiMBFjEoij+QZViMV5rhTOIp7CJzl24JEqpRDA1sJFHVXXLURktbYYp
   katex_auto_render:
-    src: webcache|katex@0.16.47/dist/contrib/auto-render.min.js
+    src: cdn_jsdelivr_npm|katex@0.16.47/dist/contrib/auto-render.min.js
     integrity: sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz
   mathjax:
     src: webcache|mathjax@3.2.2/es5/tex-mml-chtml.js
@@ -99,14 +99,14 @@ js:
     src: webcache|material-theme@1.0.0/dist/material-theme.umd.js
     integrity: sha384-vLev0II0HKFaxkcm+/7kX5IGwVFBASkGchU311wmU/veIj2bB0UcBkQbW6yw2asK
   typed:
-    src: webcache|typed.js@2.1.0/dist/typed.umd.js
+    src: local|typed.js@2.1.0/dist/typed.umd.js
     integrity: sha384-cMrTlShXEGSdSFA359p+3aVUxK/R+0TAfbRZMcTlAn8yqzxEDj05QsS65nTFMMj4
 css:
   photoswipe:
-    src: webcache|photoswipe@5.4.4/dist/photoswipe.css
+    src: local|photoswipe@5.4.4/dist/photoswipe.css
     integrity: sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei+Zx/1oA/0l8ysE
   katex:
-    src: webcache|katex@0.16.47/dist/katex.min.css
+    src: cdn_jsdelivr_npm|katex@0.16.47/dist/katex.min.css
     integrity: sha384-nH0MfJ44wi1dd7w6jinlyBgljjS8EJAh2JBoRad8a3VDw2K69vfaaqm4WnR+gXtA
   waline:
     src: webcache|@waline/client@2.15.8/dist/waline.css
@@ -128,7 +128,7 @@ css:
       - src: webcache|@fortawesome/fontawesome-free@7.3.1/css/v4-font-face.min.css
         integrity: sha384-PR7IRkzcQVYE18+Qzo+jvCpk7aBZUsKQtpDyImfQ92ONj5u3VwMmMCIi7VMoGCCS
   aos:
-    src: webcache|@reimujs/aos@0.1.3/dist/aos.css
+    src: local|@reimujs/aos@0.1.3/dist/aos.css
     integrity: sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa
   aplayer:
     src: webcache|aplayer@1.10.1/dist/APlayer.min.css
