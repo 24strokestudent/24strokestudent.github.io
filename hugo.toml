@@ -1,7 +1,7 @@
 baseURL = 'https://24strokestudent.github.io/'
 locale = 'zh-CN'
 timeZone = 'Asia/Shanghai'   # 固定时区：本地和以后 GitHub Actions(用 UTC) 构建结果一致
-title = '24strokestudent 的博客'
+title = '24strokestudent 的个人主页'
 theme = 'reimu'
 
 defaultContentLanguage = 'zh-CN'
