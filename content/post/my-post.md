@@ -5,9 +5,9 @@ date: 2026-10-24T10:26:19+08:00
 lastmod: 2026-10-24T10:26:19+08:00
 draft: false
 categories:
-  -随笔
+  - 随笔
 tags:
-  -聊天
+  - 聊天
 math: false
 mermaid: false
 ---
