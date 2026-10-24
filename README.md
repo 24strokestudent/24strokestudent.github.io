@@ -27,7 +27,12 @@ hugo --baseURL https://your-domain/ --destination public
 
 ## 部署
 
-推送到 `main` 分支后，由 GitHub Actions（`.github/workflows/hugo.yaml`）自动构建并通过 `rsync` 发布到自己的服务器。
+推送到 `main` 分支后，由 GitHub Actions（`.github/workflows/hugo.yaml`）自动完成：
+
+1. **Cloudflare Pages**（主站）：构建后通过 `wrangler pages deploy` 发布，绑定 `24strokestudent.tech`，全球 CDN + 自动 HTTPS；
+2. **自建服务器**（备用）：`rsync` 到阿里云服务器，用 IP 访问。
+
+> 为什么不用国内服务器绑域名：大陆节点需要 ICP 备案，所以主站放在 Cloudflare Pages。
 
 ## 内容说明
 
